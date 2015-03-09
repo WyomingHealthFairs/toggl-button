@@ -20,6 +20,7 @@
   "permissions": [
     "notifications",
     "idle",
+    "*://jira.whf.app/*",
     "*://*.toggl.com/*",
     "*://toggl.com/*",
     "*://*.teamweek.com/*",
@@ -73,6 +74,7 @@
   "content_scripts": [
     {
       "matches": [
+        "*://jira.whf.app/*",
         "*://*.teamweek.com/*",
         "*://*.pivotaltracker.com/*",
         "*://*.github.com/*",
@@ -192,6 +194,12 @@
         "*://*.atlassian.net/*",
         "*://*.atlassian.com/*",
         "*://*.jira.com/*"
+      ],
+      "js": ["scripts/content/jira.js"]
+    },
+    {
+      "matches": [
+        "*://jira.whf.app/*"
       ],
       "js": ["scripts/content/jira.js"]
     },
