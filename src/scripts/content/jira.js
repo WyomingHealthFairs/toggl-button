@@ -33,7 +33,7 @@ togglbutton.render('.issue-header-content:not(.toggl)', {observe: true}, functio
 
   description = titleElem.innerText;
   if (numElem !== null) {
-    description = numElem.innerText + " " + description;
+    description = numElem.innerText + " - " + description;
   }
 
   link = togglbutton.createTimerLink({
